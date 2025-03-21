@@ -30,7 +30,7 @@ The Tableau dashboard provides:
 ✅ Impact of road surface and road type on accidents  
 ✅ Recommendations to reduce accidents based on insights
 
-### 📎 [View the Dashboard on Tableau Public](https://public.tableau.com/) *(replace with your link)*
+### 📎 [View the Dashboard on Tableau Public](https://public.tableau.com/app/discover) *(replace with your link)*
 
 ---
 
