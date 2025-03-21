@@ -1,0 +1,2895 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='Book1_17425465459510' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='accident data' inline='true' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='accident data' name='textscan.1h5bax10tahffs1dd02ne1fjbhxq'>
+            <connection class='textscan' directory='D:/Data Analsis(رواد مصر الرقمية)/Tasks/Task Tableau/Tableau 2' filename='accident data.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1h5bax10tahffs1dd02ne1fjbhxq' name='accident data.csv' table='[accident data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Index' ordinal='0' />
+            <column datatype='string' name='Accident_Severity' ordinal='1' />
+            <column datatype='date' name='Accident Date' ordinal='2' />
+            <column datatype='real' name='Latitude' ordinal='3' />
+            <column datatype='string' name='Light_Conditions' ordinal='4' />
+            <column datatype='string' name='District Area' ordinal='5' />
+            <column datatype='real' name='Longitude' ordinal='6' />
+            <column datatype='integer' name='Number_of_Casualties' ordinal='7' />
+            <column datatype='integer' name='Number_of_Vehicles' ordinal='8' />
+            <column datatype='string' name='Road_Surface_Conditions' ordinal='9' />
+            <column datatype='string' name='Road_Type' ordinal='10' />
+            <column datatype='string' name='Urban_or_Rural_Area' ordinal='11' />
+            <column datatype='string' name='Weather_Conditions' ordinal='12' />
+            <column datatype='string' name='Vehicle_Type' ordinal='13' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Index</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Index]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Index</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident_Severity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Accident_Severity]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Accident_Severity</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Accident Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Accident Date]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Accident Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Light_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Light_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Light_Conditions</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>District Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[District Area]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>District Area</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Casualties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number_of_Casualties]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Number_of_Casualties</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number_of_Vehicles</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number_of_Vehicles]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Number_of_Vehicles</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road_Surface_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Road_Surface_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Road_Surface_Conditions</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Road_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Road_Type]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Road_Type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Urban_or_Rural_Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Urban_or_Rural_Area]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Urban_or_Rural_Area</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Weather_Conditions</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Weather_Conditions]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Weather_Conditions</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Type]</local-name>
+            <parent-name>[accident data.csv]</parent-name>
+            <remote-alias>Vehicle_Type</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+      <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Light Conditions' datatype='string' name='[Light_Conditions]' role='dimension' type='nominal' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Number of Casualties' datatype='integer' name='[Number_of_Casualties]' role='measure' type='quantitative' />
+      <column caption='Number of Vehicles' datatype='integer' name='[Number_of_Vehicles]' role='measure' type='quantitative' />
+      <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+      <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+      <column caption='Urban or Rural Area' datatype='string' name='[Urban_or_Rural_Area]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type' datatype='string' name='[Vehicle_Type]' role='dimension' type='nominal' />
+      <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+      <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+      <column-instance column='[Accident_Severity]' derivation='None' name='[none:Accident_Severity:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (Accident Severity)' hidden='true' name='[Action (Accident Severity)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Accident_Severity]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (MONTH(Accident Date))' hidden='true' name='[Action (MONTH(Accident Date))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:Accident Date:ok]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Road Surface Conditions)' hidden='true' name='[Action (Road Surface Conditions)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Road_Surface_Conditions]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Road Type)' hidden='true' name='[Action (Road Type)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Road_Type]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Weather Conditions)' hidden='true' name='[Action (Weather Conditions)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Weather_Conditions]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/OAMR1/AppData/Local/Temp/TableauTemp/#TableauTemp_1nsqwfx1rp5uzp1bqydkn0sfhllo.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/21/2025 06:30:40 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Index</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Index]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Index</remote-alias>
+              <ordinal>0</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>512177</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident_Severity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Accident_Severity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident_Severity</remote-alias>
+              <ordinal>1</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Accident Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Accident Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Accident Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>accident data.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5542</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>accident data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>585236</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Light_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Light_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Light_Conditions</remote-alias>
+              <ordinal>4</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>District Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[District Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>District Area</remote-alias>
+              <ordinal>5</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>644</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>accident data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>606793</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Casualties</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number_of_Casualties]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Casualties</remote-alias>
+              <ordinal>7</ordinal>
+              <family>accident data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number_of_Vehicles</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number_of_Vehicles]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number_of_Vehicles</remote-alias>
+              <ordinal>8</ordinal>
+              <family>accident data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road_Surface_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Road_Surface_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road_Surface_Conditions</remote-alias>
+              <ordinal>9</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Road_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Road_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Road_Type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Urban_or_Rural_Area</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Urban_or_Rural_Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Urban_or_Rural_Area</remote-alias>
+              <ordinal>11</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Weather_Conditions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Weather_Conditions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Weather_Conditions</remote-alias>
+              <ordinal>12</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Type</remote-alias>
+              <ordinal>13</ordinal>
+              <family>accident data.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Accident_Severity:nk]' palette='purple_10_0' type='palette'>
+            <map to='#64cdcc'>
+              <bucket>&quot;Serious&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Fatal&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Slight&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='accident data.csv' id='accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20'>
+            <properties context=''>
+              <relation connection='textscan.1h5bax10tahffs1dd02ne1fjbhxq' name='accident data.csv' table='[accident data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Index' ordinal='0' />
+                  <column datatype='string' name='Accident_Severity' ordinal='1' />
+                  <column datatype='date' name='Accident Date' ordinal='2' />
+                  <column datatype='real' name='Latitude' ordinal='3' />
+                  <column datatype='string' name='Light_Conditions' ordinal='4' />
+                  <column datatype='string' name='District Area' ordinal='5' />
+                  <column datatype='real' name='Longitude' ordinal='6' />
+                  <column datatype='integer' name='Number_of_Casualties' ordinal='7' />
+                  <column datatype='integer' name='Number_of_Vehicles' ordinal='8' />
+                  <column datatype='string' name='Road_Surface_Conditions' ordinal='9' />
+                  <column datatype='string' name='Road_Type' ordinal='10' />
+                  <column datatype='string' name='Urban_or_Rural_Area' ordinal='11' />
+                  <column datatype='string' name='Weather_Conditions' ordinal='12' />
+                  <column datatype='string' name='Vehicle_Type' ordinal='13' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+      <datasources>
+        <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+      <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]'>
+        <groupfilter function='level-members' level='[Accident_Severity]' user:ui-action-filter='[Action2_B1F24FA4915744FB8536D50B74FA4E04]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[Road_Type]' member='&quot;Dual carriageway&quot;' />
+          <groupfilter function='member' level='[Road_Type]' member='&quot;One way street&quot;' />
+          <groupfilter function='member' level='[Road_Type]' member='&quot;Roundabout&quot;' />
+          <groupfilter function='member' level='[Road_Type]' member='&quot;Single carriageway&quot;' />
+          <groupfilter function='member' level='[Road_Type]' member='&quot;Slip road&quot;' />
+        </groupfilter>
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_3FE90BD4E87A4E41BD73CD2E2B5F027D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Time LIne' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_B1F24FA4915744FB8536D50B74FA4E04]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Severity level' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_B171625B8958445BB4FAF3FC6DDD64C6]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Road Surface' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_C5A0DF78755B4EC1B8FD33813863C66F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Weather Conditions' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+    <action caption='Filter 5 (generated)' name='[Action5_A74EAACF82C8497288AB39F32939B0FA]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard' type='sheet' worksheet='Road Type' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Light Condition'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>Distribution of Accidents by Light Condition</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Light Conditions' datatype='string' name='[Light_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Light_Conditions]' derivation='None' name='[none:Light_Conditions:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Light_Conditions:nk]' member='&quot;Darkness - lighting unknown&quot;' />
+              <groupfilter function='member' level='[none:Light_Conditions:nk]' member='&quot;Darkness - lights lit&quot;' />
+              <groupfilter function='member' level='[none:Light_Conditions:nk]' member='&quot;Darkness - lights unlit&quot;' />
+              <groupfilter function='member' level='[none:Light_Conditions:nk]' member='&quot;Darkness - no lighting&quot;' />
+              <groupfilter function='member' level='[none:Light_Conditions:nk]' member='&quot;Daylight&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]' value='bold' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]' value='10' />
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='' />
+            <format attr='display-alternate-text' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='false' />
+            <format attr='band-size' scope='cols' value='1' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='axis-title'>
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aaff7f' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#aaaaff' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</rows>
+        <cols>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]</cols>
+      </table>
+      <simple-id uuid='{60A73721-1195-458A-A3B2-8C99368AC231}' />
+    </worksheet>
+    <worksheet name='Road Surface'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Distribution of Accidents by Road Surface</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Road_Surface_Conditions]' derivation='None' name='[none:Road_Surface_Conditions:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]'>
+            <groupfilter function='level-members' level='[tmn:Accident Date:ok]' user:ui-action-filter='[Action1_3FE90BD4E87A4E41BD73CD2E2B5F027D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]'>
+            <groupfilter function='level-members' level='[Weather_Conditions]' user:ui-action-filter='[Action4_C5A0DF78755B4EC1B8FD33813863C66F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Road_Surface_Conditions:nk]' member='&quot;Dry&quot;' />
+              <groupfilter function='member' level='[none:Road_Surface_Conditions:nk]' member='&quot;Flood over 3cm. deep&quot;' />
+              <groupfilter function='member' level='[none:Road_Surface_Conditions:nk]' member='&quot;Frost or ice&quot;' />
+              <groupfilter function='member' level='[none:Road_Surface_Conditions:nk]' member='&quot;Snow&quot;' />
+              <groupfilter function='member' level='[none:Road_Surface_Conditions:nk]' member='&quot;Wet or damp&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' scope='rows' value='#00000000' />
+            <format attr='height' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' value='38' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' value='125' />
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='color' data-class='subtotal' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' value='bold' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' value='10' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]' value='#000000' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='cols' value='0' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aaff7f' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</rows>
+        <cols>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]</cols>
+      </table>
+      <simple-id uuid='{3C98330F-0A84-4C48-A622-1F0A07ABD763}' />
+    </worksheet>
+    <worksheet name='Road Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Distribution of Accidents by Road Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Road_Type]' derivation='None' name='[none:Road_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]'>
+            <groupfilter function='level-members' level='[tmn:Accident Date:ok]' user:ui-action-filter='[Action1_3FE90BD4E87A4E41BD73CD2E2B5F027D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]'>
+            <groupfilter function='level-members' level='[Road_Surface_Conditions]' user:ui-action-filter='[Action3_B171625B8958445BB4FAF3FC6DDD64C6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]'>
+            <groupfilter function='level-members' level='[Weather_Conditions]' user:ui-action-filter='[Action4_C5A0DF78755B4EC1B8FD33813863C66F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Road_Type:nk]' member='&quot;Dual carriageway&quot;' />
+              <groupfilter function='member' level='[none:Road_Type:nk]' member='&quot;One way street&quot;' />
+              <groupfilter function='member' level='[none:Road_Type:nk]' member='&quot;Roundabout&quot;' />
+              <groupfilter function='member' level='[none:Road_Type:nk]' member='&quot;Single carriageway&quot;' />
+              <groupfilter function='member' level='[none:Road_Type:nk]' member='&quot;Slip road&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+            <format attr='color' data-class='total' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]' value='bold' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]' value='#000000' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]' value='10' />
+            <format attr='font-weight' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='bold' />
+            <format attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='font-size' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='10' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aaff7f' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Type:nk]</rows>
+        <cols>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</cols>
+      </table>
+      <simple-id uuid='{A22FF725-A7FF-4D52-871C-B79D301355EC}' />
+    </worksheet>
+    <worksheet name='Severity level'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='16'>Distribution of Accidents by Severity Level</run>
+            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Accident_Severity]' derivation='None' name='[none:Accident_Severity:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]'>
+            <groupfilter function='level-members' level='[tmn:Accident Date:ok]' user:ui-action-filter='[Action1_3FE90BD4E87A4E41BD73CD2E2B5F027D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]'>
+            <groupfilter function='level-members' level='[Road_Surface_Conditions]' user:ui-action-filter='[Action3_B171625B8958445BB4FAF3FC6DDD64C6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]'>
+            <groupfilter function='level-members' level='[Weather_Conditions]' user:ui-action-filter='[Action4_C5A0DF78755B4EC1B8FD33813863C66F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' num-steps='8' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <wedge-size column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <size column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Accident_Severity:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Accident_Severity:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#72b966' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CDE26747-6D3A-46F7-9399-27600F2DD6A9}' />
+    </worksheet>
+    <worksheet name='Time LIne'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Road Acidents Time Line</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]'>
+            <groupfilter function='level-members' level='[Road_Surface_Conditions]' user:ui-action-filter='[Action3_B171625B8958445BB4FAF3FC6DDD64C6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]'>
+            <groupfilter function='level-members' level='[Weather_Conditions]' user:ui-action-filter='[Action4_C5A0DF78755B4EC1B8FD33813863C66F]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Weather Conditions)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' palette='purple_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#aaff7f' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</rows>
+        <cols>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[tmn:Accident Date:qk]</cols>
+      </table>
+      <simple-id uuid='{B2CE022E-2DF4-4A14-8A30-2E97109309C3}' />
+    </worksheet>
+    <worksheet name='Weather Conditions'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Impact of Weather Conditions on Accidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2'>
+            <column datatype='date' name='[Accident Date]' role='dimension' type='ordinal' />
+            <column caption='Accident Severity' datatype='string' name='[Accident_Severity]' role='dimension' type='nominal' />
+            <column caption='Road Surface Conditions' datatype='string' name='[Road_Surface_Conditions]' role='dimension' type='nominal' />
+            <column caption='Road Type' datatype='string' name='[Road_Type]' role='dimension' type='nominal' />
+            <column caption='Weather Conditions' datatype='string' name='[Weather_Conditions]' role='dimension' type='nominal' />
+            <column caption='accident data.csv' datatype='table' name='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Weather_Conditions]' derivation='None' name='[none:Weather_Conditions:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Accident Date]' derivation='Month-Trunc' name='[tmn:Accident Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]'>
+            <groupfilter function='level-members' level='[tmn:Accident Date:ok]' user:ui-action-filter='[Action1_3FE90BD4E87A4E41BD73CD2E2B5F027D]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]'>
+            <groupfilter function='level-members' level='[Road_Surface_Conditions]' user:ui-action-filter='[Action3_B171625B8958445BB4FAF3FC6DDD64C6]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Weather_Conditions:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Fine + high winds&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Fine no high winds&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Fog or mist&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Other&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Raining + high winds&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Raining no high winds&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Snowing + high winds&quot;' />
+              <groupfilter function='member' level='[none:Weather_Conditions:nk]' member='&quot;Snowing no high winds&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Weather_Conditions:nk]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (MONTH(Accident Date))]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Surface Conditions)]</column>
+            <column>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' palette='green_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-color' value='#000000' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <color column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Weather_Conditions:nk]' />
+              <text column='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Weather_Conditions:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='14'><![CDATA[<[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8B65982F-69FC-4942-950B-95B8A00D2A36}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='1504' minheight='800' minwidth='1504' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='accident data' name='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.0vhjdwi11s8cyl1f3jxhl03s8wb2' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' is-scaled='1' param='C:/Users/OAMR1/Downloads/png (1).png' type-v2='bitmap' w='98936' x='532' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='background-color' value='#f2f2f2' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='41500' id='5' name='Time LIne' w='56051' x='731' y='8875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#ecf0f1' />
+          </zone-style>
+        </zone>
+        <zone h='49000' id='7' name='Severity level' w='25864' x='34508' y='50375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#ecf0f1' />
+          </zone-style>
+        </zone>
+        <zone h='49250' id='10' name='Road Surface' w='34043' x='665' y='50250'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#ecf0f1' />
+          </zone-style>
+        </zone>
+        <zone h='49125' id='11' name='Weather Conditions' w='39029' x='60239' y='50375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#ecf0f1' />
+          </zone-style>
+        </zone>
+        <zone h='41625' id='12' name='Road Type' w='31051' x='56848' y='8875'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='3' />
+            <format attr='background-color' value='#ecf0f1' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='7750' id='13' type-v2='text' w='99335' x='731' y='625'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='26'>Road Accidents Dashboard</run>
+          </formatted-text>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#aaff7f' />
+          </zone-style>
+        </zone>
+        <zone h='19000' id='14' name='Time LIne' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]' type-v2='filter' values='database' w='11303' x='88032' y='9125'>
+          <zone-style>
+            <format attr='border-color' value='#aaff7f' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#aaff7f' />
+          </zone-style>
+        </zone>
+        <zone h='21750' id='15' name='Time LIne' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]' type-v2='filter' values='database' w='11370' x='88032' y='28375'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#aaff7f' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='24' param='vert' type-v2='layout-flow' w='98936' x='532' y='1000'>
+                <zone forceUpdate='true' h='7750' id='13' type-v2='text' w='99335' x='731' y='625'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book' fontsize='26'>Road Accidents Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#aaff7f' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' is-scaled='1' param='C:/Users/OAMR1/Downloads/png (1).png' type-v2='bitmap' w='98936' x='532' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f2f2f2' />
+                  </zone-style>
+                </zone>
+                <zone h='19000' id='14' mode='checkdropdown' name='Time LIne' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Accident Severity)]' type-v2='filter' values='database' w='11303' x='88032' y='9125'>
+                  <zone-style>
+                    <format attr='border-color' value='#aaff7f' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#aaff7f' />
+                  </zone-style>
+                </zone>
+                <zone h='21750' id='15' mode='checkdropdown' name='Time LIne' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[Action (Road Type)]' type-v2='filter' values='database' w='11370' x='88032' y='28375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#aaff7f' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41500' id='5' is-fixed='true' name='Time LIne' w='56051' x='731' y='8875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ecf0f1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41625' id='12' is-fixed='true' name='Road Type' w='31051' x='56848' y='8875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ecf0f1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49250' id='10' is-fixed='true' name='Road Surface' w='34043' x='665' y='50250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ecf0f1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49000' id='7' is-fixed='true' name='Severity level' w='25864' x='34508' y='50375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ecf0f1' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49125' id='11' is-fixed='true' name='Weather Conditions' w='39029' x='60239' y='50375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='3' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ecf0f1' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8175BC5A-9A1E-4CBE-B925-D59535281339}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>Road Accidents Analysis: Key Factors, Insights, and Recommended Solutions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#ffffff' />
+        </style-rule>
+        <style-rule element='story-description'>
+          <format attr='border-width' id='story-description_10' value='0' />
+          <format attr='border-style' id='story-description_10' value='none' />
+          <format attr='text-align' id='story-description_10' value='auto' />
+          <format attr='background-color' id='story-description_10' value='#ffff00' />
+          <format attr='background-color' id='story-description_9' value='#ffff00' />
+          <format attr='border-width' id='story-description_9' value='0' />
+          <format attr='border-style' id='story-description_9' value='none' />
+          <format attr='border-width' id='story-description_11' value='0' />
+          <format attr='border-style' id='story-description_11' value='none' />
+          <format attr='background-color' id='story-description_11' value='#ffff00' />
+          <format attr='background-color' id='story-description_12' value='#ffff00' />
+          <format attr='border-width' id='story-description_12' value='0' />
+          <format attr='border-style' id='story-description_12' value='none' />
+          <format attr='background-color' value='#00000000' />
+          <format attr='background-color' id='story-description_13' value='#aaff7f' />
+          <format attr='border-width' id='story-description_13' value='0' />
+          <format attr='border-style' id='story-description_13' value='none' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='429' />
+          <format attr='background-color' value='#aaff7f' />
+          <format attr='color' value='#000000' />
+          <format attr='font-size' value='10' />
+          <format attr='font-weight' value='bold' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98130' id='7' param='vert' removable='false' type-v2='layout-flow' w='99064' x='468' y='935'>
+            <zone h='4323' id='8' type-v2='title' w='99064' x='468' y='935'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='93807' id='1' param='vert' removable='false' type-v2='layout-flow' w='99064' x='468' y='5258'>
+              <zone fixed-size='163' h='19042' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99064' x='468' y='5258' />
+              <zone h='74765' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99064' x='468' y='24300'>
+                <flipboard active-id='7' nav-type='caption' show-nav-arrows='true'>
+                  <story-points>
+                    <story-point caption='Accidents by Light Condition&#10;How do Light Condition Impact road Accidents:&#10;-By looking at the chart, we notice that most accidents occur during daylight.&#10;-This may be due to increased temperature and higher traffic volume during the day, unlike the conditions at night.' captured-sheet='Light Condition' id='1' />
+                    <story-point caption='Accidents by Road Type&#10;How Do Road Type Impact Road Accidents:&#10;-By Looking At The Chart , We notice That Most Accidents occur on single carriageway roads.&#10;- This may be due to the lack of separation between directions, which increases the risk of collisions.' captured-sheet='Road Type' id='3' />
+                    <story-point caption='Accidents by Road Surface Conditions&#10;How Do  Road Surface Conditions Impact Road Accidents:&#10;-By looking at the Chart, we notice that most accidents happen when the road surface is dry.&#10;' captured-sheet='Road Surface' id='4' />
+                    <story-point caption='Accidents by Weather Conditions&#10;How Do Road Weather Conditions Impact Road Accidents:&#10;-By looking At the Chart, We Notice That Most Accidents Happen When the weather is Fine with no high winds.&#10;' captured-sheet='Weather Conditions' id='5' />
+                    <story-point caption='END' captured-sheet='' id='7' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='22547' hidden='true' id='9' story-point-id='1' type-v2='text' w='32943' x='37507' y='35397'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000'>Recommendation:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000'>Since most accidents happen during daylight, it is recommended to:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000'>- Increase traffic patrols during peak hours.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000'>- Launch awareness campaigns about safe driving during the day.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000'>- Implement speed control measures</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='17290' hidden='true' id='10' story-point-id='3' type-v2='text' w='34933' x='41662' y='50584'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontsize='16'>Recommendations:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontsize='16'>- Add barriers or separators where possible.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontsize='16'>- Increase awareness campaigns about driving carefully on single carriageways.</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='14836' hidden='true' id='11' story-point-id='4' type-v2='text' w='40960' x='39029' y='36449'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Recommendation:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>-Use Warning Signs ti remind Drivers That Accidents Also Occur on dry Roads</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='11682' hidden='true' id='12' story-point-id='5' type-v2='text' w='39146' x='32300' y='34930'>
+          <formatted-text>
+            <run bold='true' fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Recommendation:</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Arial Black'>-</run>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book'>Enforce speed limits and monitor driving behavior especially during fine weather.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='36449' id='13' story-point-id='7' type-v2='text' w='67291' x='15389' y='36565'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>In conclusion</run>
+            <run>Æ&#10;&#10;</run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book' fontsize='28'>The analysis confirms that driver behavior is a major factor. Awareness and stricter control are essential for safer roads.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{584BDDCB-1DF8-45BD-A37F-88E966EA90E5}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Light Condition'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Light_Conditions:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E619744-6B73-4D79-9C41-EB9B40A650A6}' />
+    </window>
+    <window class='worksheet' name='Severity level'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Accident_Severity:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{73FD95E4-74D6-44D5-9EB1-09E5ACE7A051}' />
+    </window>
+    <window class='worksheet' name='Road Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF1BF070-C22C-451C-8321-44B82BBDAE9C}' />
+    </window>
+    <window class='worksheet' name='Road Surface'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Road_Surface_Conditions:nk]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Urban_or_Rural_Area:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B7D8242A-B619-46F7-91B4-1883E4F2DD39}' />
+    </window>
+    <window class='worksheet' name='Weather Conditions'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7F11128C-CFFD-4BCC-8D05-7D6A9E189672}' />
+    </window>
+    <window class='worksheet' name='Time LIne'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[mn:Accident Date:ok]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[none:Urban_or_Rural_Area:nk]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[qr:Accident Date:ok]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[tmn:Accident Date:qk]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[tyr:Accident Date:ok]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[wd:Accident Date:ok]</field>
+            <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[yr:Accident Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{43B4877A-2CA0-431D-8224-1D09DD431A24}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard'>
+      <viewpoints>
+        <viewpoint name='Road Surface'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Road Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Severity level'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.0vhjdwi11s8cyl1f3jxhl03s8wb2].[__tableau_internal_object_id__].[cnt:accident data.csv_3DE18E0BE2D648C6A1F7D9BF3B9C9D20:qk]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Time LIne'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Weather Conditions'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{130D00C0-8E3B-4961-8466-F91965BAF509}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='5' />
+      <simple-id uuid='{06C4D90C-5D7A-4E91-AA81-9B0759BA6881}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Light Condition' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Road Surface' width='192'>
+      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
+      XyTcZAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Road Type' width='192'>
+      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
+      ABTnxT01QzOlAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Severity level' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Story 1' width='192'>
+      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
+      TkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Time LIne' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Weather Conditions' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAGZ0lEQVR4nO3aW2yTdRzG8WfrYevYBkxhOAJk4zAUFTYRnChORdwwGlAT0BgSjYcEEy9M
+      vPDGG69ITNQLE40aT0TMPEQWohIR0IHgDAKCQzZOwhiUsvPK2Nau3gjxMA0hWWd4vp+r9n2T
+      t7/3Tb9523+bkUqlUgJMZY70AMBICp5/EI/HR3IOYEQE//xkU8N2/Xhwz0jNAqTdXwL48eAe
+      ra1bN1KzAGnHdwBYIwBYGzKA0olT9fwDT+vBiiW6eeYNCgdDl3TwpfPv1uicfEn64zjhC/sm
+      jBmnqrLKfx8sI1MLZ83/x/aMjAytrHzgkuYB/i441MZx+QWqb9qtHxp3qaqsUleNHa8nFz+s
+      RHJQH2z5VCtuvU9HTzdrzbef6c7rF6iseJb6EgOqb9qtO69boIbmJn3+wwblZo/SE3c9pGhn
+      TOf6+/RLuFHPLX1KgcxMfbbjKy2es1AVpeV6seZVXT1pukKBoKrLb9f7mz/R9KISFY65Usvm
+      V6m4cJLaejp0ovWUykqulVIpPXLbMk0smKC3Nq5Va3dHuq8bLhP/+hFowcwbNW96mXIjoxQK
+      BLWjcZeaTh7Wgqvnat+xAwoGApKknHBEa7fWKpFMqKx4ll5a94aKCgolSYnkgN7ZVKOccER5
+      kVxNnTBF2w/sVENzkwKBgLb8sl1HTh9XMBDUsdgJVZSW6/iZFt1fsUT7m5uUF8lVOBTSu5s+
+      VnYoSzOKSvRy7Zvq7O3WsViLwqGw8iN56blSuCwNGUDn2W7VbFuvTXu3KdoRU29/n1q72xXt
+      OKO6hnrNKCrW+R+QW7vb1T/Qr5a2qOoa6vXsfU/owIlDkqTTna0aSCbU0h7VqfbTOnjyqOZO
+      m62KGeXqH+hXa1e7ou0xDaYG1Xm2W5L09Z46hQIBRTvO6GR7VLHOViWSCbW0RbW/uUmrqleq
+      uzeuK/ML1DfQr97+c+m5UrgsZZz/K0Q8Htfq2teHdRk0N3uUHl+0QilJr335nhLJxLC9FnAx
+      hvwOMFx6zsX1yvq30/mSwH9iGRTWhrwDFI+fpMcWLVdjy2Ft3LNVq6pW6vUNazRl/ETdNKNc
+      E8aM0/NrViuVSumZex5VJCtb73xTo+W33KucrIhe+/J9PbJwmQryxuiNDWsU62pL93kBF2XI
+      O0Bx4SQFM4M6Gm1WR7xLP/+2X6FgUN//ulMfba3VzsN7lRxMKpKVrbycXB2JHld1+e3KCmXp
+      WOyEqssqFe87qw+/+1y3XDMv3ecEXLQhA/jp8D69sPYlVV5XoeRgUsnB5IV9S264Q1/s3CxJ
+      ip87q5pt6zU6J0+HTh1Vbf3XGp2Tr1hXq/IiozQ2d7R6+1ilwf/XkAFckTdWq6pXqq6hXqUT
+      p2raVcVaNr9KOeFs/dp8UN29PVo8Z6FKCidr3rTZ6urt0Y7GXZo3fbbaejq0Zd92NbYc0Zzi
+      Wdq87/t0nxNw0S55GbSooFAtbdFhHQ4Ybpe8CsSbH5cDlkFhjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBgjQBg
+      jQBgjQBgLfjnJyWFk1VRWj5SswBp9zs5fouro4fypQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
